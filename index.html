@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Properties</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    /* Flex Container */
+    .flex-container {
+      display: flex;
+      justify-content: space-around; /* Align horizontally */
+      align-items: center;           /* Align vertically */
+      flex-wrap: wrap;               /* Allow wrapping */
+      gap: 15px;
+      background: #fff;
+      padding: 20px;
+      border: 2px solid #ccc;
+    }
+
+    /* Flex Items */
+    .flex-item {
+      background: teal;
+      color: white;
+      font-size: 18px;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 150px; /* grow shrink basis */
+      transition: transform 0.3s;
+    }
+
+    .flex-item:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Flexbox Example</h1>
+  <div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+    <div class="flex-item">Item 4</div>
+  </div>
+</body>
+</html>
